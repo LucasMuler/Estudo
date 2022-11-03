@@ -2,8 +2,8 @@ package bytebanktreino1;
 
 public class CriaConta {
 	public static void main(String[] args) {
-		Conta primeiraConta = new Conta();
-		Conta segundaConta = new Conta();
+		Conta primeiraConta = new Conta(1234, 02);
+		Conta segundaConta = new Conta(2222, 01);
 		
 		primeiraConta.saldo = 300;
 		System.out.println(primeiraConta.saldo);
