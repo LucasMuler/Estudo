@@ -4,8 +4,10 @@ public class Conta {
 	private int agencia;
 	private double saldo;
 	public Cliente titular;
+	private static int total;
 	
 	public Conta(int numero, int agencia, Cliente cliente){
+		total++;
 		this.agencia = agencia;
 		this.numero = numero;
 		this.titular = cliente;		
@@ -29,6 +31,10 @@ public class Conta {
 	
 	public void gettitular(){
 		System.out.println(this.titular);
+	}
+	
+	public static void gettotal() {
+		System.out.println(Conta.total);
 	}
 	
 	//Métodos do meu banco 
@@ -59,6 +65,10 @@ public class Conta {
 		} else {
 			System.out.println("saldo insuficiente");
 		}
+	}
+	
+	public static int getContardor() {
+		return Conta.total;
 	}
 	
 }

@@ -11,8 +11,6 @@ public class Main {
 		primeiraConta.transfere(200, segundaConta);
 		
 		primeiraConta.titular.CPF = "222.222.222-22";
-		System.out.println(primeiraConta.titular.CPF);
-		System.out.println(primeiroCliente.CPF);
-		
+	
 	}
 }
