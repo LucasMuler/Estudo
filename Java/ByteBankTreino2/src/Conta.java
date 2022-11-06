@@ -3,13 +3,12 @@ public class Conta {
 	private int numero;
 	private int agencia;
 	private double saldo;
-	private Cliente titular;
+	public Cliente titular;
 	
 	public Conta(int numero, int agencia, Cliente cliente){
 		this.agencia = agencia;
 		this.numero = numero;
-		this.titular = new Cliente();
-		this.titular = cliente;
+		this.titular = cliente;		
 		System.out.println("a conta de " + this.titular + " está sendo definida com o numero: "
 			+ this.numero + " e a agencia: " + this.agencia);
 	}
