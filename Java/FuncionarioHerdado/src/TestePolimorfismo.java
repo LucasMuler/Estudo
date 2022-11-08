@@ -5,7 +5,7 @@ public class TestePolimorfismo {
 		
 		Funcionario primeiroGerente = new Gerente();
 		primeiroGerente.setSalario(2000.00);
-		Funcionario primeiroFuncionario = new Funcionario();
+		Funcionario primeiroFuncionario = new Gerente();
 		primeiroFuncionario.setSalario(2000.00);
 		
 		ControleBonificacao f1 = new ControleBonificacao();

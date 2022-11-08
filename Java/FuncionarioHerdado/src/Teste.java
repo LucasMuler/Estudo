@@ -1,9 +1,9 @@
 
 public class Teste {
 	public static void main(String[] args) {
-		Funcionario primeiroFuncionario = new Funcionario();
+		Funcionario primeiroFuncionario = new Gerente();
 		Gerente segundoFuncionario = new Gerente();
-		Funcionario terceiroFuncionario = new Funcionario();
+		Funcionario terceiroFuncionario = new Gerente();
 		
 		primeiroFuncionario.setSalario(100);
 		segundoFuncionario.setSalario(1000);
