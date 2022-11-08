@@ -14,5 +14,6 @@ public class Teste {
 		
 		System.out.println("o salario final e: " + primeiroFuncionario.getSalario());
 		System.out.println("o salario final e: " + segundoFuncionario.getSalario());
+	
 	}
 }

@@ -13,7 +13,7 @@ public class Funcionario {
 	// Metodos
 	
 	public double getbonificacao() {
-		return this.salario * 0.3;
+		return this.salario + (this.salario * 0.3);
 	}
 	
 	//get e sets
