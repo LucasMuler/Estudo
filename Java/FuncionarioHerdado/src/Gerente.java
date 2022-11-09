@@ -1,32 +1,24 @@
 
-public class Gerente extends Funcionario{
+public class Gerente extends FuncionarioAutenticavel{
 
-	private int senha;
-	
-	
-	//metodos
-	
-	public boolean autentica(int senha) {
-		if (this.senha == senha) {
-			return true;
-		} else {
-			return false;
-		}
-	}
 	
 	public double getbonificacao() {
 		return super.getSalario();
 	}
+	
+//	//metodos
+//	
+//	public boolean autentica(int senha) {
+//		if (this.senha == senha) {
+//			return true;
+//		} else {
+//			return false;
+//		}
+//	}
+	
+	
 
 	//Get e Set
 	
-	public int getSenha() {
-		return senha;
-	}
-
-
-	public void setSenha(int senha) {
-		this.senha = senha;
-	}
 	
 }

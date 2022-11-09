@@ -1,19 +1,15 @@
 
 public class Teste {
 	public static void main(String[] args) {
-		Funcionario primeiroFuncionario = new Gerente();
-		Gerente segundoFuncionario = new Gerente();
-		Funcionario terceiroFuncionario = new Gerente();
 		
-		primeiroFuncionario.setSalario(100);
-		segundoFuncionario.setSalario(1000);
-		terceiroFuncionario.setSalario(100);
+		Gerente g1 = new Gerente();
+		Editor e1 = new Editor();
+		Administrador a1 = new Administrador();
 		
-		System.out.println(primeiroFuncionario.getbonificacao());
-		System.out.println(segundoFuncionario.getbonificacao());
+		Sistemainterno si = new Sistemainterno();
 		
-		System.out.println("o salario final e: " + primeiroFuncionario.getSalario());
-		System.out.println("o salario final e: " + segundoFuncionario.getSalario());
+		si.autentica(g1, 2222);
+		si.autentica(a1, 222);
 	
 	}
 }
