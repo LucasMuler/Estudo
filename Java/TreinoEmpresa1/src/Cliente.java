@@ -1,18 +1,20 @@
 
 public class Cliente implements Autentica{
 
-private int senha;
-	
+	private AutenticaUnitario autenticavel;
+
+
+	public Cliente() {
+		this.autenticavel = new AutenticaUnitario();
+	}
+
 	public void setsenha(int senha) {
-		this.senha = senha;
+		this.autenticavel.setsenha(senha);
 	}
 	
 	public boolean autentica(int senha) {
-		if (this.senha == senha) {
-			return true;
-		} else {
-			return false;
-		}
+		boolean autentica = this.autenticavel.autentica(senha);
+		return autentica;
 	}
 
 }

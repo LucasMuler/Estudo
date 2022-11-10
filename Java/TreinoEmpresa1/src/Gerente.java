@@ -1,8 +1,7 @@
 
 public class Gerente extends Funcionario implements Autentica{
 
-	
-	private int senha;
+	private AutenticaUnitario autenticador;
 	
 	@Override
 	public double getbonificacao() {
@@ -10,19 +9,19 @@ public class Gerente extends Funcionario implements Autentica{
 		return bonificacao;
 	}
 	
+	public Gerente() {
+		this.autenticador = new AutenticaUnitario();
+	}
 	
 	//metodos obrigatorios pelo autentica 
 	
 	public void setsenha(int senha) {
-		this.senha = senha;
+		this.autenticador.setsenha(senha);
 	}
 	
 	public boolean autentica(int senha) {
-		if (this.senha == senha) {
-			return true;
-		} else {
-			return false;
-		}
+		boolean autentica = this.autenticador.autentica(senha);
+		return autentica;
 	}
 	
 }
