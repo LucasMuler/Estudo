@@ -5,12 +5,17 @@ public abstract class Conta {
 	private int agencia;
 	private double saldo;
 	private Cliente titular;
+	private AcaoBolsa acao;
+	private SeguroDeVida seg;
 	
 	//metodos
 	
 	public Conta(int numero, int agencia) {
 		this.numero = numero;
 		this.agencia = agencia;
+		this.acao = new AcaoBolsa();
+		this.seg = new SeguroDeVida();
+		
 	}
 	
 	public void deposita(double deposito) {
