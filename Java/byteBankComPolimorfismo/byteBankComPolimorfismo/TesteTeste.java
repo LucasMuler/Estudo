@@ -3,25 +3,19 @@ public class TesteTeste {
 
 	public static void main(String[] args) {
 		
-//		Conta primeiraConta = new ContaCorrente(1324, 01);
-//		Cliente Lucas = new Cliente();
-//		primeiraConta.setTitular(Lucas);
-//		
-//		Conta segundaConta = new ContaPoupanca(1245, 02);
-//		Cliente Amanda = new Cliente();
-//		segundaConta.setTitular(Amanda);
-//		
-//		primeiraConta.deposita(500.00);
-//		primeiraConta.transfere(200, segundaConta);
-//		
-//		System.out.println(segundaConta.getSaldo());
-//		System.out.println(primeiraConta.getSaldo());
 		
-		Conta primeiraConta = new ContaCorrente(1234, 01);
+		Conta primeiraConta = new ContaCorrente(1234, 04);
+		Conta segundaConta = new ContaCorrente(2222, 07);
+		CalcImposto cal = new CalcImposto();
 		
-		primeiraConta.
+		primeiraConta.setMultiplicadorInposto(0.5);
 		
+		System.out.println(cal.getValorInposto(primeiraConta));
+	
+		primeiraConta.setMultiplicadorInposto(0.2);
 		
-
+		System.out.println(cal.getValorInposto(primeiraConta));
+		System.out.println(cal.getValorInposto(segundaConta));
+		
 	}
 }

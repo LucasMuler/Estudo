@@ -1,6 +1,6 @@
 
 public interface Tributavel {
 
-	public double getValorInposto();
+	public double getValorInposto(Conta conta);
 	
 }

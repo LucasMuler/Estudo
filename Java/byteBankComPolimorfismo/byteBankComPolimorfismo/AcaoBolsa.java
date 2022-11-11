@@ -15,8 +15,8 @@ private double valorBolsa = 150;
 
 
 	@Override
-	public double getValorInposto() {
-		double valor = valorBolsa * 0.2;
+	public double getValorInposto(Conta conta) {
+		double valor = valorBolsa * conta.getMultiplicadorInposto();
 		return valor;
 	}
 

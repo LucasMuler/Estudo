@@ -15,10 +15,13 @@ public class SeguroDeVida implements Tributavel{
 
 
 	@Override
-	public double getValorInposto() {
-		double valor = valorSeguro * 0.5;
+	public double getValorInposto(Conta conta) {
+		double valor = valorSeguro * conta.getMultiplicadorInposto();
 		return valor;
 	}
+
+
+	
 
 	
 	

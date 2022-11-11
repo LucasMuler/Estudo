@@ -5,19 +5,19 @@ public abstract class Conta {
 	private int agencia;
 	private double saldo;
 	private Cliente titular;
-	private AcaoBolsa acao;
-	private SeguroDeVida seg;
+	private double multiplicadorInposto = 0.3;
 	
-	//metodos
 	
 	public Conta(int numero, int agencia) {
 		this.numero = numero;
 		this.agencia = agencia;
-		this.acao = new AcaoBolsa();
-		this.seg = new SeguroDeVida();
 		
 	}
 	
+	//metodos
+	
+	
+
 	public void deposita(double deposito) {
 		if (deposito > 0) {
 			this.saldo += deposito;
@@ -42,6 +42,15 @@ public abstract class Conta {
 	
 	
 	//get e set
+	
+	public double getMultiplicadorInposto() {
+		return multiplicadorInposto;
+	}
+
+	public void setMultiplicadorInposto(double multiplicadorInposto) {
+		this.multiplicadorInposto = multiplicadorInposto;
+	}
+	
 	public int getNumero() {
 		return numero;
 	}
