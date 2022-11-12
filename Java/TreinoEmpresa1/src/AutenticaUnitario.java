@@ -1,5 +1,5 @@
 
-public class AutenticaUnitario {
+public class AutenticaUnitario implements Autentica {
 
 	private int senha;
 	
