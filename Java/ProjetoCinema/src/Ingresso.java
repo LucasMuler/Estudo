@@ -10,7 +10,7 @@ public abstract class Ingresso{
 	}
 	
 	public double getValor() {
-		return this.valorBase();
+		return valor;
 	}
 	public double setValor(double valor) {
 		return this.valor = valor;

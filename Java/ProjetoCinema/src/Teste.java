@@ -4,7 +4,7 @@ public class Teste {
 	public static void main(String[] args) {
 		
 		Ingresso i1 = new CamaroteInferior();
-		Cliente c1 = new Cliente(i1, true);
+		Cliente c1 = new Cliente(i1, false);
 		
 		c1.setIngresso(i1);
 		
