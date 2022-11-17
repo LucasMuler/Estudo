@@ -7,10 +7,6 @@ public class SistemaInterno {
 	
 	//metodos 
 	
-	public boolean estudante(Cliente cliente) {
-		if (cliente.isEstudante() == true) {
-
-		}
-	}
 	
+
 }

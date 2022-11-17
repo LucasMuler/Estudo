@@ -2,17 +2,36 @@
 public class Cliente {
 
 	private int idade;
-	private boolean estudante;
+	private boolean estudante = true;
 	private String nome;
+	private Ingresso ingresso;
 	
-	//metodos
 	
-	public double valorFinal() {
-		if 
+	//---------------------------------------------
+	
+	public Cliente(Ingresso ingresso, boolean estudante) {
+		this.estudante = estudante;
+		this.ingresso = ingresso;
 	}
+	
+	public double getValor() {
+		if (estudante == true) {
+			return ingresso.getValor() / 2;
+		} else {
+			return ingresso.getValor();
+		}
+	}
+
+	//---------------------------------------------
 	
 	public int getIdade() {
 		return idade;
+	}
+	public Ingresso getIngresso() {
+		return ingresso;
+	}
+	public void setIngresso(Ingresso ingresso) {
+		this.ingresso = ingresso;
 	}
 	public void setIdade(int idade) {
 		this.idade = idade;

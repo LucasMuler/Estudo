@@ -3,16 +3,13 @@ public class Teste {
 
 	public static void main(String[] args) {
 		
-		Normal i1 = new Normal();
-		CamaroteInferior i2 = new CamaroteInferior();
-		CamaroteSuperior i3 = new CamaroteSuperior();
+		Ingresso i1 = new CamaroteInferior();
+		Cliente c1 = new Cliente(i1, true);
 		
-		System.out.println(i3.getvalor());
-		System.out.println(i2.getvalor());
-		System.out.println(i1.getvalor());
+		c1.setIngresso(i1);
 		
+		System.out.println(c1.getValor());
 		
-
 	}
 
 }
