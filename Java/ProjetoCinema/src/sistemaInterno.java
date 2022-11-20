@@ -8,6 +8,7 @@ public class sistemaInterno {
 		i1.setingresso3D();
 		i1.getValor();
 		Pagamento p1 = new Pagamento(i1, "Debito");
+		
 		//-------------------------------------------
 		
 		
