@@ -1,5 +1,8 @@
+package br.com.NomeEmpresa.NomeProjeto.Pagamento;
 
-public class Debito extends Pagamento{
+import br.com.NomeEmpresa.NomeProjeto.ClassesComuns.*;
+
+public class Debito extends Pagamento {
 
 	public Debito(Ingresso ingresso, String tipo) {
 		super(ingresso, tipo);
@@ -7,7 +10,7 @@ public class Debito extends Pagamento{
 	}
 
 	private double saldo;
-	
+
 	public void inicia() {
 		System.out.println("Pode Inserir o cartão e utilizar o pad para colocar a senha");
 		if (saldo >= super.getIngresso()) {
@@ -16,13 +19,13 @@ public class Debito extends Pagamento{
 			System.out.println("valor insuficiente");
 		}
 	}
-	
+
 	public double getsaldo() {
 		return this.saldo;
 	}
-	
+
 	public void setsaldo(double valor) {
 		this.saldo = valor;
 	}
-	
+
 }
