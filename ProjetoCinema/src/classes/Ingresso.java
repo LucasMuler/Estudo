@@ -1,4 +1,4 @@
-
+package classes;
 public class Ingresso {
 
 	private double valorbase = 12;
@@ -13,7 +13,7 @@ public class Ingresso {
 	public double getValor() {
 		
 		if (cliente.getmeia() == true) {
-			System.out.print("O valor ficou: " + this.valor / 2);
+			System.out.println("O valor ficou: " + this.valor / 2);
 			return this.valor / 2;
 		} else {
 			System.out.println("O valor ficou: " + this.valor);
