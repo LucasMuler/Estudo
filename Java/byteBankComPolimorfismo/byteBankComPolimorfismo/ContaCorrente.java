@@ -15,4 +15,9 @@ public class ContaCorrente extends Conta{
 		super.saca(valorComTaixa);
 	}
 	
+	@Override
+	public String toString() {
+		return super.toString() + "Conta Corrente";
+	}
+	
 }

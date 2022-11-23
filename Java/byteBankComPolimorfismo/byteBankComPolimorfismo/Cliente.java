@@ -38,6 +38,9 @@ public class Cliente {
 		this.profissao = profissao;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return "eu sou um objeto do tipo cliente: " + super.toString();
+	}
 	
 }
