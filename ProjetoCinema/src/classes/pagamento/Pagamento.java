@@ -17,6 +17,11 @@ public class Pagamento{
 		}
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
+	
 	public double getIngresso() {
 		return ingresso.getValor();
 	}
