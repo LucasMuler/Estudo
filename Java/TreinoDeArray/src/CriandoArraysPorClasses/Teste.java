@@ -4,18 +4,22 @@ public class Teste {
 
 	public static void main(String[] args) {
 
-		CriaConta c = new CriaConta();
+		GuardadorDeReferencias c = new GuardadorDeReferencias();
 		Conta c1 = new ContaCorrente();
 		int c2 = 10;
 		Conta c3 = new ContaPoupanca();
 		
 		c1.setSaldo(500.6546213);
 		
-		c.adicionaObjeto(c1);
-		c.adicionaObjeto(c2);
-		c.adicionaObjeto(c3);
+		c.setAdicionaReferencia(c1);
+		c.setAdicionaReferencia(c2);
+		c.setAdicionaReferencia(c3);
 
-		System.out.println(c.totalContas());
+		Conta ref1 = (Conta) c.getReferencia(c1);
+		
+		System.out.println(ref1.getSaldo());
+		
+		System.out.println(c.getQuantidadeDeObjetos());
 		
 	}
 
