@@ -11,20 +11,22 @@ public class TesteArrayListEquals {
 
 		ArrayList<Conta> lista = new ArrayList<Conta>();
 
-		Conta c1 = new ContaCorrente();
-		Conta c2 = new ContaPoupanca();
-
+		Conta c1 = new ContaCorrente(12,30);
 		lista.add(c1); // posição na array 0
+		
+		Conta c2 = new ContaPoupanca(20,20);
 		lista.add(c2);
+		Conta c3 = new ContaPoupanca(20,20);
+
+		lista.get(0).setSaldo(500.652);
 		
-		Conta ref1 = (Conta) lista.get(0); // para poder utilizar os metodos é necessario usar um Cast.
+		System.out.println("existe o C2? " + lista.equals(c3));
 		
-		ref1.setSaldo(10);
-		System.out.println(ref1.getSaldo());
-		System.out.println(lista.get(0));
-		
-		System.out.println(lista.get(1).getSaldo());
-		System.out.println(lista.get(1));
+//		System.out.println(lista.get(0).getSaldo());
+//		System.out.println(lista.get(0));
+//
+//		System.out.println(lista.get(1).getSaldo());
+//		System.out.println(lista.get(1));
 		System.out.println(lista.size());
 
 	}
