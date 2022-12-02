@@ -12,4 +12,13 @@ public abstract class Conta {
 		this.saldo = saldo;
 	}
 
+	public boolean equals(Object obj) {
+		
+		Conta cr = (Conta)obj;
+		if (this.saldo == cr.saldo) {
+			return true;
+		}
+		return false;
+	}
+
 }

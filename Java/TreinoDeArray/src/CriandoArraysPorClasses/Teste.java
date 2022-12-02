@@ -5,9 +5,9 @@ public class Teste {
 	public static void main(String[] args) {
 
 		GuardadorDeReferencias c = new GuardadorDeReferencias();
-		Conta c1 = new ContaCorrente();
+		Conta c1 = new ContaCorrente(22,22);
 		int c2 = 10;
-		Conta c3 = new ContaPoupanca();
+		Conta c3 = new ContaPoupanca(30,50);
 		
 		c1.setSaldo(500.6546213);
 		

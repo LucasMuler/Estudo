@@ -11,8 +11,8 @@ public class Teste {
 
 		ArrayList<Conta> lista = new ArrayList<Conta>();
 
-		Conta c1 = new ContaCorrente();
-		Conta c2 = new ContaPoupanca();
+		Conta c1 = new ContaCorrente(20,15);
+		Conta c2 = new ContaPoupanca(30,12);
 
 		lista.add(c1); // posição na array 0
 		lista.add(c2);

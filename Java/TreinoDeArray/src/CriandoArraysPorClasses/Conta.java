@@ -8,23 +8,21 @@ public abstract class Conta {
 	public Conta(int numero, int conta) {
 		this.numero = numero;
 		this.conta = conta;
+		
 	}
 	
 	@Override
-	public boolean equals(Object obj) {
+	 public boolean equals(Object o) {
 		
-		Conta ref = (Conta) obj;
+		Conta ref = (Conta)o;
 		
-		if(this.numero != ref.numero) {
-			return false;
-		}
-		
-		if(this.conta != ref.conta) {
-			return false;
-		}
-		
-		return true;
-    }
+	        if (this.conta != ref.conta || this.numero != ref.numero) {
+	            return false;
+	        }
+			return true;
+	    }
+	
+	
 	
 	/**
 	 * Getes e Sters

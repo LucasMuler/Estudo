@@ -11,16 +11,19 @@ public class TesteArrayListEquals {
 
 		ArrayList<Conta> lista = new ArrayList<Conta>();
 
-		Conta c1 = new ContaCorrente(12,30);
+		ContaCorrente c1 = new ContaCorrente(13,30);
 		lista.add(c1); // posição na array 0
 		
-		Conta c2 = new ContaPoupanca(20,20);
+		ContaPoupanca c2 = new ContaPoupanca(12,30);
 		lista.add(c2);
-		Conta c3 = new ContaPoupanca(20,20);
+	
+		
+		ContaPoupanca c3 = new ContaPoupanca(20,20);
+		lista.add(c3);
 
 		lista.get(0).setSaldo(500.652);
 		
-		System.out.println("existe o C2? " + lista.equals(c3));
+		System.out.println("existe o C2? " + lista.contains(c1));
 		
 //		System.out.println(lista.get(0).getSaldo());
 //		System.out.println(lista.get(0));
