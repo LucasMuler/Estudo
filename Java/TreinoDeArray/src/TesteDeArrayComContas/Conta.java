@@ -2,16 +2,17 @@ package TesteDeArrayComContas;
 
 public abstract class Conta {
 
-	private int saldo;
-
-	public int getSaldo() {
-		return saldo;
+	private double saldo;
+	private int numero;
+	private int agencia;
+	private Cliente cliente;
+	
+	public Conta(int numero, int agencia, Cliente cliente) {
+		this.numero = numero;
+		this.agencia = agencia;
+		this.cliente = cliente;
 	}
-
-	public void setSaldo(int saldo) {
-		this.saldo = saldo;
-	}
-
+	
 	public boolean equals(Object obj) {
 		
 		Conta cr = (Conta)obj;
@@ -20,5 +21,43 @@ public abstract class Conta {
 		}
 		return false;
 	}
+	
+	
+	/**
+	 * Geters e setters
+	 */
+	
+	public Cliente getTitular() {
+		return this.cliente;
+	}
+	
+	public double getSaldo() {
+		return saldo;
+	}
+
+	public int getNumero() {
+		return numero;
+	}
+
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+
+	public int getAgencia() {
+		return agencia;
+	}
+
+
+	public void setAgencia(int agencia) {
+		this.agencia = agencia;
+	}
+
+
+	public void deposita(double saldo) {
+		this.saldo = saldo;
+	}
+
 
 }

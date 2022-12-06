@@ -34,11 +34,11 @@ public class TestandoEqualseContains {
 		
 		ArrayList<Conta> lista = new ArrayList<Conta>();
 		
-		ContaCorrente c1 = new ContaCorrente();
-		c1.setSaldo(10);
+		ContaCorrente c1 = new ContaCorrente(01,02);
+		c1.deposita(10);
 		lista.add(c1);
-		ContaPoupanca c2 = new ContaPoupanca();
-		c2.setSaldo(10);
+		ContaPoupanca c2 = new ContaPoupanca(01,02);
+		c2.deposita(10);
 		lista.add(c2);
 		
 		boolean ref = c1.equals(c2);

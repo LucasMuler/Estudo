@@ -5,14 +5,14 @@ public class Teste {
 	public static void main(String[] args) {
 		
 		Conta[] contas = new Conta[2];
-		ContaCorrente cc = new ContaCorrente();
-		ContaPoupanca cp = new ContaPoupanca();
+		ContaCorrente cc = new ContaCorrente(01,02);
+		ContaPoupanca cp = new ContaPoupanca(01,02);
 		
 		contas[0] = cc;
 		contas[1] = cp;
 		
-		contas[0].setSaldo(10);
-		contas[1].setSaldo(80);
+		contas[0].deposita(10);
+		contas[1].deposita(80);
 		
 		ContaCorrente ref = (ContaCorrente) contas[1];
 		

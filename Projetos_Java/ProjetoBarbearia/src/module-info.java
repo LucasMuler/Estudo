@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author miill
+ *
+ */
+module ProjetoBarbearia {
+}
