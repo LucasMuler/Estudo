@@ -7,7 +7,7 @@ public class Cliente {
 
 	private boolean PasseDeEstudante;
 	private String tipoIngresso;
-	private double saldo;
+	private double saldo = 500;
 	
 	private Ingresso ingresso;
 	private Pagamento pagamento;
