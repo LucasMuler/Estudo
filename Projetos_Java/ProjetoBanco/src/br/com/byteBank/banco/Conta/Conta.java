@@ -1,6 +1,9 @@
 package br.com.byteBank.banco.Conta;
 
+import java.util.ArrayList;
+
 import br.com.byteBank.banco.Cliente.Cliente;
+import br.com.byteBank.banco.Excption.MinhaExption;
 
 public class Conta {
 
@@ -28,11 +31,43 @@ public class Conta {
 	
 	
 	public void deposita(double saldo) {
-		this.saldo = saldo;
+
+		if(saldo >= 0) {
+			this.saldo = this.saldo + saldo;
+		}
+		else {
+			throw new MinhaExption("saldo negativo, ");
+		}
 	}
 	
+	
+	
 	public double saca(double valor) {
-		return this.saldo - valor;
+		
+		if (valor > 0) {
+			
+			this.saldo = this.saldo - valor;
+			return this.saldo;
+			
+		}
+		
+		else {
+			throw new MinhaExption("valor de saque negativo, ");
+		}
+		
+		
+	}
+	
+	public void transfere(Conta conta, double valor) {
+		
+		if (valor > 0) {
+		this.saldo = this.saldo - valor;
+		conta.saldo = conta.saldo + valor;
+		System.out.println("Foi feita uma transferencia de R$ " + valor + " para a " + conta);
+		}
+		else {
+			throw new MinhaExption("valor de transferencia negativo, ");
+		}
 	}
 	
 	

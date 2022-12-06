@@ -9,4 +9,10 @@ public class ContaPoupanca extends Conta{
 		// TODO Auto-generated constructor stub
 	}
 
+	@Override
+	public String toString() {
+		return "ContaPoupanca N: " + this.getNumero() + " agencia: " + this.getAgencia();
+	}
+
+	
 }

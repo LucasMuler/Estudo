@@ -9,4 +9,10 @@ public class ContaCorrente extends Conta{
 		// TODO Auto-generated constructor stub
 	}
 
+	@Override
+	public String toString() {
+		return "ContaCorrente N: " + this.getNumero() + " agencia: " + this.getAgencia();
+	}
+
+	
 }
