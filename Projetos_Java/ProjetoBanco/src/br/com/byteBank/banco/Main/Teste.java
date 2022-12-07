@@ -7,31 +7,29 @@ import br.com.byteBank.banco.Cliente.Cliente;
 import br.com.byteBank.banco.Conta.Conta;
 import br.com.byteBank.banco.Conta.ContaCorrente;
 import br.com.byteBank.banco.Conta.ContaPoupanca;
-import br.com.byteBank.banco.Excption.MinhaExption;
 
 public class Teste {
 
 	public static void main(String[] args) {
-		
+
 		ArrayList<Conta> listaDeConta = new ArrayList<Conta>();
-		
+
 		Cliente cliente1 = new Cliente("Lucas", "222.222.222-22");
 		Conta conta1 = new ContaCorrente(3040, 02, cliente1);
 		listaDeConta.add(conta1);
-		
-		Cliente cliente2 = new Cliente ("Amanda", "111.111.111-11");
-		Conta conta2 = new ContaPoupanca(6845, 01, cliente2);	
+
+		Cliente cliente2 = new Cliente("Amanda", "111.111.111-11");
+		Conta conta2 = new ContaPoupanca(6845, 01, cliente2);
 		listaDeConta.add(conta2);
-		
-		
-		Cliente cliente3 = new Cliente ("Guilherme", "333.333.333-33");
-		Conta conta3 = new ContaPoupanca(9478, 01, cliente3);	
+
+		Cliente cliente3 = new Cliente("Guilherme", "333.333.333-33");
+		Conta conta3 = new ContaPoupanca(9478, 01, cliente3);
 		listaDeConta.add(conta3);
-		
-		Cliente cliente4 = new Cliente ("Ronaldo", "444.444.444-44");
-		Conta conta4 = new ContaPoupanca(2648, 01, cliente4);	
+
+		Cliente cliente4 = new Cliente("Ronaldo", "444.444.444-44");
+		Conta conta4 = new ContaPoupanca(2648, 01, cliente4);
 		listaDeConta.add(conta4);
-		
+
 //		try {
 //
 //			cc1.deposita(200);
@@ -43,40 +41,24 @@ public class Teste {
 //		}
 //		
 //		System.out.println(cc1.getSaldo());
-		
-		System.out.println(listaDeConta.size());
-		
+
+//		System.out.println(listaDeConta.size());
+//
 		for (Conta conta : listaDeConta) {
 			System.out.println(conta);
 		}
-		
-		comparadorDeContaNumeroCrescente c = new comparadorDeContaNumeroCrescente();
-		listaDeConta.sort(c);
-		
+
+		listaDeConta.sort((Conta c1, Conta c2) ->{
+				return Integer.compare(c1.getNumero(), c2.getNumero());
+			});
+
 		System.out.println("--------------------");
-		
+
 		for (Conta conta : listaDeConta) {
 			System.out.println(conta);
 		}
-		
+
 	}
 
 }
 
-class comparadorDeContaNumeroCrescente implements Comparator<Conta>{
-
-	@Override
-	public int compare(Conta c1, Conta c2) {
-		
-		if (c1.getNumero() > c2.getNumero()) {
-			return 1;
-		}
-		
-		if (c1.getNumero() < c2.getNumero()) {
-			return -1;
-		}
-		
-		return 0;
-	}
-	
-}
