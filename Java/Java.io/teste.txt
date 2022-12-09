@@ -1,0 +1,3 @@
+Teste de PrintStream
+
+Sua vantagem é poder usar metodos de alto nivel como println
