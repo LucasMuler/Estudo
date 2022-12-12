@@ -14,15 +14,15 @@ public class LeituraComScanner {
 			String linha = scanner.nextLine();
 			System.out.println(linha);
 			
-			Scanner scannerDeLinha = new Scanner(linha);
-			scannerDeLinha.useDelimiter(",");
+//			Scanner scannerDeLinha = new Scanner(linha);
+//			scannerDeLinha.useDelimiter(",");
 			
 //			while(scannerDeLinha.hasNext()) {
 //				String item = scannerDeLinha.next();
 //				System.out.println(item);
 //			}
 			
-			scannerDeLinha.close();
+//			scannerDeLinha.close();
 		}
 	
 		scanner.close();
