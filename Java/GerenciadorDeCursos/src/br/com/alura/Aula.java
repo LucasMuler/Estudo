@@ -1,6 +1,6 @@
 package br.com.alura;
 
-public class Aula {
+public class Aula implements Comparable<Aula>{
 
 	private String titulo;
 	private int tempo;
@@ -24,5 +24,10 @@ public class Aula {
 	public String toString() {
 
 		return "Aula: " + this.titulo + " Com " + this.tempo +" minutos";
+	}
+
+	@Override
+	public int compareTo(Aula o) {
+		return this.titulo.compareTo(o.titulo);
 	}
 }
