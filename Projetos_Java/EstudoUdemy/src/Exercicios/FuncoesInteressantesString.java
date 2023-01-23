@@ -20,6 +20,12 @@ public class FuncoesInteressantesString {
 		
 		String s05 = original.substring(2, 9);
 		System.out.println(s05);
+		
+		String s06 = original.replace('a', 'x');
+		System.out.println(s06);
+		
+		String s07 = original.replace("abc", "xy");
+		System.out.println(s07);
 	}
 
 }
