@@ -26,6 +26,21 @@ public class FuncoesInteressantesString {
 		
 		String s07 = original.replace("abc", "xy");
 		System.out.println(s07);
+		
+		int i = original.indexOf("bc");
+		System.out.println(i);
+		
+		/*
+		 * é isso ai 
+		 */
+		
+		 String s2 = "potato apple lemon";
+		 String[] vect = s2.split(" ");
+		 
+		 System.out.println(vect[0]);
+		 System.out.println(vect[1]);
+		 System.out.println(vect[2]);
+		 
 	}
 
 }
