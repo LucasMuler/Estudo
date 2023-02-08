@@ -36,6 +36,7 @@ public class Program {
 	
 		for (Funcionario funcionario : listaDeEmpregados) {
 			if (funcionario.getId() == idDoAumento) {
+				
 				System.out.println("Entre a porcentagem de aumento");
 				double porcentagemDoAumento = sc.nextDouble();
 				sc.nextLine();
@@ -45,6 +46,7 @@ public class Program {
 				System.out.println(aumento);
 				
 				funcionario.setSalario(aumento);
+				
 			} else {
 				System.out.println("ID não registrado");
 			}
