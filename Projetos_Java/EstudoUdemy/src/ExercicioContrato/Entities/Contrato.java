@@ -39,7 +39,8 @@ public class Contrato {
 	}
 	
 	public double totalValue() {
-		return this.valorPorHora * this.horas;
+		double total = this.valorPorHora * this.horas;
+		return total;
 	}
 
 	@Override
