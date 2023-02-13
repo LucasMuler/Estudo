@@ -8,6 +8,8 @@ public class Program {
 		
 		Scanner sc = new Scanner(System.in);
 		
+		System.out.println("Entre o numero de linhas e o de colunas");
+		
 		int nLinhas = sc.nextInt();
 		int nColunas = sc.nextInt();
 		
@@ -19,34 +21,39 @@ public class Program {
 			}
 		}
 		
+		System.out.println("Numero a ser pesquisado ");
+		
 		int numeroPesquisa = sc.nextInt();
 		
 		for(int l = 0; l < nLinhas; l++) {
 			for(int c = 0; c < nColunas; c++) {
 				if (mat[l][c] == numeroPesquisa) {
-					System.out.println("Posicao " + l + " ," + c);
+					System.out.println("Posicao " + l + ", " + c);
 			
 					try {
-						System.out.println("a esqueda do numero escolhido " + mat[l][(c-1)]);
+						System.out.println("a esqueda do numero escolhido: " + mat[l][(c-1)]);
 					} catch (Exception e) {
 						System.out.println("posicao nao existente");
 					}try {
-						System.out.println("a direita do numero escolhido " + mat[l][(c+1)]);
+						System.out.println("a direita do numero escolhido: " + mat[l][(c+1)]);
 					} catch (Exception e) {
 						System.out.println("posicao nao existente");
 					}try {
-						System.out.println("a cima do numero escolhido " + mat[(l-1)][(c)]);
+						System.out.println("a cima do numero escolhido: " + mat[(l-1)][(c)]);
 					} catch (Exception e) {
 						System.out.println("posicao nao existente");
 					}try {
-						System.out.println("a baixo do numero escolhido " + mat[(l+1)][(c)]);
+						System.out.println("a baixo do numero escolhido: " + mat[(l+1)][(c)]);
 					} catch (Exception e) {
 						System.out.println("posicao nao existente");
 					}
+					
 				}
 			}
 		}
+		
 		sc.close();
+		
 	}
 
 }
