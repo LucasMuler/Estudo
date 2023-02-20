@@ -46,12 +46,14 @@ public class Program {
 			}	
 		}
 		
+		System.out.println();
 		System.out.println("Taxes Paid:");
 		
 		for (Pessoa pessoa : listaDePessoas) {
 			System.out.println(pessoa);
 		}
 		
+		System.out.println();
 		System.out.print("Total Taxes $ ");
 		
 		double sum = 0;
