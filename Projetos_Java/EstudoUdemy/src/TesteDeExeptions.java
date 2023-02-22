@@ -22,11 +22,13 @@ public class TesteDeExeptions {
 			System.out.println(nomes.get(position));
 			
 		} catch (IndexOutOfBoundsException e) {
-			
+
+			e.printStackTrace();
 			System.out.println("Nao existe esta posicao");
 			
 		} catch (InputMismatchException e) {
 			
+			e.printStackTrace();
 			System.out.println("nao e possivel pesquisar este caractere");
 			
 		}
