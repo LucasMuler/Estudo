@@ -30,7 +30,6 @@ public class TesteDeExeptions {
 			
 			e.printStackTrace();
 			System.out.println("nao e possivel pesquisar este caractere");
-			
 		}
 		
 		System.out.println("Programa finalizado");
