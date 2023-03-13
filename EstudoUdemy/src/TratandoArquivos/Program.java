@@ -1,4 +1,4 @@
-package LendoArquivoDeTexto;
+package TratandoArquivos;
 
 import java.io.File;
 import java.io.IOException;
