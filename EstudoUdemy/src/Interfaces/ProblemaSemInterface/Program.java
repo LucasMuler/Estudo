@@ -2,12 +2,11 @@ package Interfaces.ProblemaSemInterface;
 
 import Interfaces.Entities.Carros;
 import Interfaces.Entities.EstadiaCarro;
-import Interfaces.Entities.Inposto;
+import Interfaces.Entities.ImpostoBrasileiro;
 
 import java.text.ParseException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.time.temporal.ChronoUnit;
 import java.util.Scanner;
 
 public class Program {
@@ -48,7 +47,7 @@ public class Program {
 
         Carros c = new Carros(model);
         EstadiaCarro ec = new EstadiaCarro(comeco,fim);
-        Inposto i = new Inposto(ec);
+        ImpostoBrasileiro i = new ImpostoBrasileiro(ec);
 
         ec.calculaEstadia(precoHora, precoDia);
         double tax = i.calcTax();

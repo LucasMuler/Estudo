@@ -1,10 +1,12 @@
 package Interfaces.Entities;
 
-public class Inposto {
+import Interfaces.interfaces.Taixas;
+
+public class ImpostoBrasileiro implements Taixas {
 
     private EstadiaCarro estadiaCarro;
 
-    public Inposto(EstadiaCarro estadiaCarro) {
+    public ImpostoBrasileiro(EstadiaCarro estadiaCarro) {
         this.estadiaCarro = estadiaCarro;
     }
 
