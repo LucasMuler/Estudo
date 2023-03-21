@@ -1,4 +1,4 @@
-package Interfaces.Entities;
+package Interfaces.ProgramaCarrosDeAluguel.Entities;
 
 public class Fatura {
 

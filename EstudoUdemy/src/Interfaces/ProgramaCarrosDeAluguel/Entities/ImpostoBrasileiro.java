@@ -1,6 +1,6 @@
-package Interfaces.Entities;
+package Interfaces.ProgramaCarrosDeAluguel.Entities;
 
-import Interfaces.interfaces.Taixas;
+import Interfaces.ProgramaCarrosDeAluguel.interfaces.Taixas;
 
 public class ImpostoBrasileiro implements Taixas {
 
