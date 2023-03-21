@@ -1,5 +1,6 @@
 package Generics_Set_Map.GenericDelimitado;
 
+import Generics_Set_Map.GenericDelimitado.Entities.Product;
 import Generics_Set_Map.GenericDelimitado.services.CalculationService;
 
 import java.io.BufferedReader;
@@ -12,17 +13,20 @@ public class Program {
     public static void main(String[] args) {
 
         String path = "C:\\temp\\in.txt";
-        List<Integer> list = new ArrayList<>();
+        List<Product> list = new ArrayList<>();
 
         try (BufferedReader bf = new BufferedReader(new FileReader(path))){
 
             String line = bf.readLine();
             while (line != null){
-                list.add(Integer.parseInt(line));
+                String[] array = line.split(",");
+                String nome = array[0];
+                double value = Double.parseDouble(array[1]);
+                list.add(new Product(nome,value));
                 line = bf.readLine();
             }
 
-            Integer x = CalculationService.max(list);
+            Product x = CalculationService.max(list);
             System.out.println("max: " + x);
 
         } catch (IOException e){

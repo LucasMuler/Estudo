@@ -4,12 +4,20 @@ import java.util.List;
 
 public class CalculationService {
 
-    public static Integer max(List<Integer> list){
+    /**
+     * Um tipo T qualquer extende a classe comparable recebendo como um parametro um outro tipo T
+     * este metodo retorna um tipo T e recebe um lista de tipos T quer tem o endereço list
+     * @param list
+     * @return
+     * @param <T>
+     */
+
+    public static <T extends  Comparable<T>> T max(List<T> list){
         if(list.isEmpty()){
             throw new IllegalStateException("List is empty");
         }
-        Integer max = list.get(0);
-        for (Integer i: list) {
+        T max = list.get(0);
+        for (T i: list) {
             if (i.compareTo(max) > 0){
                 max = i;
             }
