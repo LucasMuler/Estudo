@@ -33,7 +33,7 @@ public class Program {
                 listaEntrada.add(u);
                 line = bf.readLine();
             }
-            
+
             System.out.println("Total users: " + listaEntrada.size());
 
         } catch (IOException e){
