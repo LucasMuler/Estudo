@@ -1,24 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7dd4ce7d-6518-4d72-bca9-f5d7bc352bc2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/jdbc2/.idea/libraries/mysql_connector_j_8_0_31.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc2/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc2/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc2/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc2/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc2/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc2/jdbc1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc2/out/production/jdbc1/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc2/out/production/jdbc1/db/DB.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc2/out/production/jdbc1/db/DbException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc2/out/production/jdbc1/mysql-connector-j-8.0.31.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc2/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc2/src/db/DB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc2/src/db/DbException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc2/src/mysql-connector-j-8.0.31.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jdbc1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc1/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdbc4/jdbc1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc3/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +25,30 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Lucas/Desktop/Estudo/EstudoUdemy/src/jdbc2"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/Lucas/Desktop/Estudo/EstudoUdemy/src/jdbc4"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Lucas\Desktop\Estudo\EstudoUdemy\src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="src" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="src" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
