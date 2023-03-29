@@ -12,6 +12,7 @@ public class Main {
         Connection conn = null;
         PreparedStatement st = null;
         try{
+
             conn = DB.getConnection(); // Opens a connection with your DB
             st = conn.prepareStatement( //Creates a SQL term to execute
              "insert into seller"
@@ -47,6 +48,7 @@ public class Main {
         } finally {
             DB.closeStatement(st);
             DB.closeConnection();
+
         }
 
     }

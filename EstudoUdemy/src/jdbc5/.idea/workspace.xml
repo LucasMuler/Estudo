@@ -11,7 +11,7 @@
       <change beforePath="$PROJECT_DIR$/../jdbc2/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc2/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jdbc3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc3/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jdbc3/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc3/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbc4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc4/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +42,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Lucas/Desktop/Estudo/EstudoUdemy/src/jdbc4",
+    "last_opened_file_path": "C:/Users/Lucas/Desktop/Estudo/EstudoUdemy/src/jdbc5",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -51,6 +51,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Lucas\Desktop\Estudo\EstudoUdemy\src\jdbc5\src\db" />
       <recent name="C:\Users\Lucas\Desktop\Estudo\EstudoUdemy\src\jdbc1\src" />
     </key>
   </component>

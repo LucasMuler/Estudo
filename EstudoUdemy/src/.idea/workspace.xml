@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dd4ce7d-6518-4d72-bca9-f5d7bc352bc2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/jdbc4/jdbc1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jdbc2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc2/out/production/jdbc1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc2/out/production/jdbc1/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc2/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc2/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jdbc3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc3/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc3/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc4/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +29,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Lucas/Desktop/Estudo/EstudoUdemy/src/jdbc4"
+    "last_opened_file_path": "C:/Users/Lucas/Desktop/Estudo/EstudoUdemy/src/jdbc5"
   }
 }]]></component>
   <component name="RecentsManager">
