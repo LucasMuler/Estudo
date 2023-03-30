@@ -5,28 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dd4ce7d-6518-4d72-bca9-f5d7bc352bc2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/src.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc6/.idea/libraries/mysql_connector_j_8_0_31.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc6/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc6/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc6/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc6/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc6/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc6/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc6/jdbc1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc6/out/production/jdbc1/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc6/out/production/jdbc1/db/DB.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc6/out/production/jdbc1/db/DbException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc6/out/production/jdbc1/db/DbIntegrityException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc6/out/production/jdbc1/mysql-connector-j-8.0.31.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc6/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc6/src/db/DB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc6/src/db/DbException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc6/src/db/DbIntegrityException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jdbc6/src/mysql-connector-j-8.0.31.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jdbc1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdbc6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc6/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
