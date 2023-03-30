@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dd4ce7d-6518-4d72-bca9-f5d7bc352bc2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jdbc6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jdbc6/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7dd4ce7d-6518-4d72-bca9-f5d7bc352bc2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,7 +24,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/miill/Desktop/Estudo/EstudoUdemy/src/jdbc6"
+    "last_opened_file_path": "C:/Users/Lucas/Desktop/Estudo/EstudoUdemy"
   }
 }]]></component>
   <component name="RecentsManager">
