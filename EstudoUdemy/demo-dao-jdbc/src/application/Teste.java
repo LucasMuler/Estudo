@@ -12,26 +12,31 @@ import javax.naming.Name;
 import java.sql.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.List;
 
 public class Teste {
     public static void main(String[] args) {
 
         SellerDao sellerDao = DaoFactory.createSellerDao();
-        Seller seller = sellerDao.findById(4);
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
-        try {
+        System.out.println("=== test 1: seller findById ====");
+        Seller seller = sellerDao.findById(3);
+        System.out.println(seller);
 
-            Department department = new Department(07,"Suporte");
-            Date d = new Date(sdf.parse("18/12/2002").getTime());
-            Seller sel = new Seller(11,"Jose","jose@gmail",d,5000,department);
-            sellerDao.insert(sel);
-
-        } catch (ParseException e) {
-            throw new RuntimeException(e);
+        System.out.println("\n=== test 2: seller findByDepartment ===");
+        Department department = new Department(2, null);
+        List<Seller> list = sellerDao.findByDepartment(department);
+        for (Seller obj: list) {
+            System.out.println(obj);
         }
 
-        System.out.println(seller);
+        System.out.println("\n=== test 3: seller findAll ===");
+        list = sellerDao.findAll();
+        for (Seller obj:
+             list) {
+            System.out.println(obj);
+        }
+
 
     }
 }
