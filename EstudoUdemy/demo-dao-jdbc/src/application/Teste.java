@@ -46,9 +46,11 @@ public class Teste {
         seller = sellerDao.findById(1);
         seller.setName("Robinson");
         sellerDao.update(seller);
+        System.out.println("Update completed");
 
         System.out.println("\n=== test 6: delete seller ===");
         sellerDao.deleteById(7);
+        System.out.println("Delete completed");
 
     }
 }
