@@ -26,14 +26,12 @@ public class SellerDaoJDBC implements SellerDao {
 
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         PreparedStatement st = null;
-
-
         try {
             st = conn.prepareStatement(
                     "insert into seller"
                             + "(Name, Email, BirthDate, BaseSalary, DepartmentId)"
                             + "values "
-                            + "(?, ?, ?, ?, ?)");
+                            + "(?, ?, ?, ?, ?)", Statement.RETURN_GENERATED_KEYS);
 
             st.setString(1,obj.getName());
             st.setString(2, obj.getEmail());
@@ -42,6 +40,17 @@ public class SellerDaoJDBC implements SellerDao {
             st.setInt(5,obj.getDepartment().getId());
 
             int rowsAfected = st.executeUpdate();
+
+            if (rowsAfected > 0){
+                ResultSet rs = st.getGeneratedKeys();
+                if (rs.next()){
+                    int id = rs.getInt(1);
+                    obj.setId(id);
+                }
+                DB.closeResultSet(rs);
+            } else {
+                throw new DbException("erro inesperado, não foi afetado nenhuma linha");
+            }
 
             System.out.println("Rows affected: " + rowsAfected);
 

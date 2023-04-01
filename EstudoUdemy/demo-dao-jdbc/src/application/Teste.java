@@ -15,8 +15,9 @@ import java.text.SimpleDateFormat;
 import java.util.List;
 
 public class Teste {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
 
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         SellerDao sellerDao = DaoFactory.createSellerDao();
 
         System.out.println("=== test 1: seller findById ====");
@@ -37,6 +38,9 @@ public class Teste {
             System.out.println(obj);
         }
 
+        System.out.println("\n=== test 3: insert seller ===");
+        Seller seller1 = new Seller(7,"Jonas","jonas@icloud",sdf.parse("14/03/2000"),3000, department);
+        sellerDao.insert(seller1);
 
     }
 }
