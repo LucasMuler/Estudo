@@ -38,14 +38,17 @@ public class Teste {
             System.out.println(obj);
         }
 
-        System.out.println("\n=== test 4: insert seller ===");
-        Seller seller1 = new Seller(7,"Jonas","jonas@icloud",sdf.parse("14/03/2000"),3000, department);
-        sellerDao.insert(seller1);
+//        System.out.println("\n=== test 4: insert seller ===");
+//        Seller seller1 = new Seller(7,"Jonas","jonas@icloud",sdf.parse("14/03/2000"),3000, department);
+//        sellerDao.insert(seller1);
 
-        System.out.println("\n=== test 5: insert seller ===");
+        System.out.println("\n=== test 5: Update seller ===");
         seller = sellerDao.findById(1);
         seller.setName("Robinson");
         sellerDao.update(seller);
+
+        System.out.println("\n=== test 6: delete seller ===");
+        sellerDao.deleteById(7);
 
     }
 }
