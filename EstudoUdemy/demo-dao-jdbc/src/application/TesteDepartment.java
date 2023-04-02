@@ -13,9 +13,20 @@ public class TesteDepartment {
 
         DepartmentDao departmentDao = DaoFactory.createDepartmentDao();
 
-        System.out.println("=== test1: create a department ===");
-        Department department = new Department(9,"setorTeste");
-        departmentDao.insert(department);
+        System.out.println("\n === test1: create a department ===");
+        Department department = new Department(10,"setorTeste2");
+//        departmentDao.insert(department);
+        System.out.println("Department created success");
+
+        System.out.println("\n === test2: find by Id ===");
+        department = departmentDao.findById(1);
+        System.out.println(department);
+
+        System.out.println("\n === test3: update a department ===");
+        department = departmentDao.findById(2);
+        department.setName("testeUpdate");
+        departmentDao.update(department);
+        System.out.println("update success");
 
     }
 }

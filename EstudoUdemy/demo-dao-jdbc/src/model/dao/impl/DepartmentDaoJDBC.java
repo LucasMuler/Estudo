@@ -43,6 +43,21 @@ public class DepartmentDaoJDBC implements DepartmentDao {
     @Override
     public void update(Department obj) {
 
+        PreparedStatement st = null;
+
+        try{
+
+            st = conn.prepareStatement("update department set Name = ? where Id = ?");
+            st.setString(1,obj.getName());
+            st.setInt(2,obj.getId());
+
+            st.executeUpdate();
+        } catch (SQLException e){
+            throw new DbException(e.getMessage());
+        } finally {
+            DB.closeStatement(st);
+        }
+
     }
 
     @Override
@@ -53,11 +68,40 @@ public class DepartmentDaoJDBC implements DepartmentDao {
     @Override
     public Department findById(Integer id) {
 
-        return null;
+        PreparedStatement st = null;
+        ResultSet rs = null;
+
+        try{
+
+            st = conn.prepareStatement("select * from department where Id = ?");
+            st.setInt(1, id);
+            rs = st.executeQuery();
+
+            if(rs.next()){
+                Department department = instanciarDepartament(rs);
+                return department;
+            } else{
+                return null;
+            }
+
+
+        } catch (SQLException e){
+            throw new DbException(e.getMessage());
+        } finally {
+            DB.closeStatement(st);
+            DB.closeResultSet(rs);
+        }
     }
 
     @Override
     public List<Department> findAll() {
         return null;
+    }
+
+    private Department instanciarDepartament(ResultSet rs) throws SQLException {
+        int id = rs.getInt("Id");
+        String nameDep = rs.getString("Name");
+        Department dp = new Department(id,nameDep);
+        return  dp;
     }
 }
