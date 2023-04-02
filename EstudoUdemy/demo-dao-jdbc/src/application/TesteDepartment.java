@@ -6,7 +6,9 @@ import model.dao.SellerDao;
 import model.entities.Department;
 import model.entities.Seller;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class TesteDepartment {
     public static void main(String[] args) {
@@ -32,6 +34,9 @@ public class TesteDepartment {
         departmentDao.deleteById(10);
         System.out.println("delete successes");
 
-        
+        System.out.println("\n === test5: findAll ===");
+        for (Department dep: departmentDao.findAll()) {
+            System.out.println(dep);
+        }
     }
 }
