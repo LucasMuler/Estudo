@@ -1,20 +1,15 @@
 package application;
 
-import db.DB;
-import db.DbException;
 import model.dao.DaoFactory;
 import model.dao.SellerDao;
-import model.dao.impl.SellerDaoJDBC;
 import model.entities.Department;
 import model.entities.Seller;
 
-import javax.naming.Name;
-import java.sql.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.List;
 
-public class Teste {
+public class TesteSeller {
     public static void main(String[] args) throws ParseException {
 
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
