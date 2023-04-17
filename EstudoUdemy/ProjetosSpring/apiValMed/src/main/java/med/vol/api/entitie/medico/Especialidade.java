@@ -1,6 +1,6 @@
 package med.vol.api.entitie.medico;
 
-public enum Espacialidade {
+public enum Especialidade {
 
     ORTOPEDIA,
     CARDIOLOGIA,
