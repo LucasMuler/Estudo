@@ -49,12 +49,5 @@ public class medico {
         if(dados.endereco() != null){
             this.endereco.atualizarInformacoes(dados.endereco());
         }
-        if(dados.nome() != null){
-
-        }
-
-
-
-
     }
 }
