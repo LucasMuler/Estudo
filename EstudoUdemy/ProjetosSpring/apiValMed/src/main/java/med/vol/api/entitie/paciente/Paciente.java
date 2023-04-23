@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.io.Serializable;
 
-@Entity(name = "paciente")
-@Table(name = "paciente")
+@Entity(name = "pacientes")
+@Table(name = "pacientes")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
@@ -23,10 +23,13 @@ public class Paciente implements Serializable {
     private String telefone;
     private String cpf;
 
+    private boolean ativo;
+
     @Embedded
     private Endereco endereco;
 
     public Paciente(DadosCadastropaciente dados){
+        this.ativo = true;
         this.nome = dados.nome();
         this.email = dados.email();
         this.cpf = dados.cpf();
