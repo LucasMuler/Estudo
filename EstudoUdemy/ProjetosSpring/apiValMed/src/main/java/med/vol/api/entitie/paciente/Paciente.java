@@ -2,6 +2,7 @@ package med.vol.api.entitie.paciente;
 
 import jakarta.persistence.*;
 import lombok.*;
+import med.vol.api.entitie.endereco.DadosEndereco;
 import med.vol.api.entitie.endereco.Endereco;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -26,7 +27,7 @@ public class Paciente implements Serializable {
     private boolean ativo;
 
     @Embedded
-    private Endereco endereco;
+    private DadosEndereco endereco;
 
     public Paciente(DadosCadastropaciente dados){
         this.ativo = true;
