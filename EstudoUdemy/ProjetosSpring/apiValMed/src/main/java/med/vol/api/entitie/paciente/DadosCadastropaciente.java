@@ -16,7 +16,6 @@ public record DadosCadastropaciente(
         @Email
         String email,
 
-        @NotBlank
         @Pattern(regexp = "\\d{4,6}")
         String telefone,
 
