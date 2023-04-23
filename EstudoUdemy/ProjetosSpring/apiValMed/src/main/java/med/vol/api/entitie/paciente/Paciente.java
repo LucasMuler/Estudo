@@ -26,4 +26,13 @@ public class Paciente implements Serializable {
     @Embedded
     private Endereco endereco;
 
+    public Paciente(DadosCadastropaciente dados){
+        this.nome = dados.nome();
+        this.email = dados.email();
+        this.cpf = dados.cpf();
+        this.telefone = dados.telefone();
+        this.cpf = dados.cpf();
+        this.endereco = dados.endereco();
+    }
+
 }
