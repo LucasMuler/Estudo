@@ -1,10 +1,9 @@
 package med.vol.api.entitie.paciente;
 
 import jakarta.persistence.*;
+import jakarta.validation.Valid;
 import lombok.*;
-import med.vol.api.entitie.endereco.DadosEndereco;
 import med.vol.api.entitie.endereco.Endereco;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.io.Serializable;
 
@@ -37,6 +36,18 @@ public class Paciente implements Serializable {
         this.telefone = dados.telefone();
         this.cpf = dados.cpf();
         this.endereco = new Endereco(dados.endereco());
+    }
+
+    public void atualizarDados(@Valid DadosAtualizarPaciente dados){
+        if(dados.nome() != null){
+            this.nome = dados.nome();
+        }
+        if(dados.telefone() != null){
+            this.telefone = dados.telefone();
+        }
+        if(dados.endereco() != null){
+            endereco.atualizarInformacoes(dados.endereco());
+        }
     }
 
 }
