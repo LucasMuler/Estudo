@@ -5,8 +5,7 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
-import med.vol.api.entitie.endereco.DadosEndereco;
-import med.vol.api.entitie.endereco.Endereco;
+import med.vol.api.entitie.endereco.*;
 
 public record DadosCadastropaciente(
         @NotBlank
@@ -16,7 +15,7 @@ public record DadosCadastropaciente(
         @Email
         String email,
 
-        @Pattern(regexp = "\\d{4,6}")
+        @NotBlank
         String telefone,
 
         @NotBlank

@@ -27,7 +27,7 @@ public class Paciente implements Serializable {
     private boolean ativo;
 
     @Embedded
-    private DadosEndereco endereco;
+    private Endereco endereco;
 
     public Paciente(DadosCadastropaciente dados){
         this.ativo = true;
@@ -36,7 +36,7 @@ public class Paciente implements Serializable {
         this.cpf = dados.cpf();
         this.telefone = dados.telefone();
         this.cpf = dados.cpf();
-        this.endereco = dados.endereco();
+        this.endereco = new Endereco(dados.endereco());
     }
 
 }
