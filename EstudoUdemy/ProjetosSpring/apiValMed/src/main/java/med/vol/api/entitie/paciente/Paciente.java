@@ -50,4 +50,7 @@ public class Paciente implements Serializable {
         }
     }
 
+    public void deletar(){
+        this.ativo = false;
+    }
 }
