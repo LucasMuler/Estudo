@@ -1,6 +1,4 @@
-package med.vol.api.entitie.paciente;
-
-import org.jetbrains.annotations.NotNull;
+package med.vol.api.domain.paciente;
 
 public record DadosListagemPaciente(Long id,String nome, String email, String cpf) {
 

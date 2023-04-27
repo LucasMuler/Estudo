@@ -1,4 +1,4 @@
-package med.vol.api.entitie.medico;
+package med.vol.api.domain.medico;
 
 public record dadosListagemMedico(Long id,String nome, String email, String crm, Especialidade especialidade) {
 

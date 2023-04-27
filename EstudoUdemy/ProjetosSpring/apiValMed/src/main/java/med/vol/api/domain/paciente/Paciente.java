@@ -1,9 +1,9 @@
-package med.vol.api.entitie.paciente;
+package med.vol.api.domain.paciente;
 
 import jakarta.persistence.*;
 import jakarta.validation.Valid;
 import lombok.*;
-import med.vol.api.entitie.endereco.Endereco;
+import med.vol.api.domain.endereco.Endereco;
 
 import java.io.Serializable;
 
