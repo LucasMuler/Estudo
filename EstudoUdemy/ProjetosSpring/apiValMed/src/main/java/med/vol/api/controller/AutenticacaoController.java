@@ -19,6 +19,13 @@ public class AutenticacaoController {
     @Autowired
     private AuthenticationManager manager;
 
+    /**
+     * Recebe uma requisição do tipo post na URL acima, será direcionado para este bloco, que é responsavel
+     * por efetuar o login, o mesmo recebe em seu corpo um arquivo Json que é utilizado para criar um DTO do
+     * proprio Spring Security, o mesmo a partir da minha classe SecurityConfigurations irá relizar a autenticação
+     * @param dados
+     * @return
+     */
     @PostMapping
     public ResponseEntity efetuarLogin(@RequestBody @Valid DadosAutenticacao dados){
         var token = new UsernamePasswordAuthenticationToken(dados.login(),dados.senha());
