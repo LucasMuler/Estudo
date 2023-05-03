@@ -2,6 +2,8 @@ package med.vol.api.controller;
 
 import jakarta.validation.Valid;
 import med.vol.api.domain.usuario.DadosAutenticacao;
+import med.vol.api.domain.usuario.Usuario;
+import med.vol.api.infra.security.TokenService;
 import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -19,6 +21,9 @@ public class AutenticacaoController {
     @Autowired
     private AuthenticationManager manager;
 
+    @Autowired
+    private TokenService tokenService;
+
     /**
      * Recebe uma requisição do tipo post na URL acima, será direcionado para este bloco, que é responsavel
      * por efetuar o login, o mesmo recebe em seu corpo um arquivo Json que é utilizado para criar um DTO do
@@ -31,7 +36,7 @@ public class AutenticacaoController {
         var token = new UsernamePasswordAuthenticationToken(dados.login(),dados.senha());
         var authentication = manager.authenticate(token);
 
-        return ResponseEntity.ok().build();
+        return ResponseEntity.ok(tokenService.gerarToken((Usuario) authentication.getPrincipal()));
     }
 
 }
