@@ -5,6 +5,7 @@ import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTVerificationException;
 import med.vol.api.domain.usuario.Usuario;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.time.Instant;
@@ -15,6 +16,9 @@ import java.util.Date;
 @Service
 public class TokenService {
 
+    @Value("${api.security.token.secret}")
+    private String secret;
+
     /**
      * Metodo que cria token utilizando o algoritimo do HMAC256, este token identifica o usuario, mostra quem o gera, pega o id
      * e gera uma data de expiracao a partir do metodo abaixo
@@ -23,7 +27,7 @@ public class TokenService {
      */
     public String gerarToken(Usuario usuario){
         try {
-            var algoritimo = Algorithm.HMAC256("12345678");//criando um algoritimo utilizado, foi utilizado um algoritimo mais simples HMAC256 e o mesmo usa uma senha
+            var algoritimo = Algorithm.HMAC256(secret);//criando um algoritimo utilizado, foi utilizado um algoritimo mais simples HMAC256 e o mesmo usa uma senha
             return JWT.create()
                     .withIssuer("API Voll.med") // indentificacao de quem está gerando o token
                     .withSubject(usuario.getLogin()) // apresenta quem e o dono deste token
