@@ -39,6 +39,20 @@ public class TokenService {
         }
     }
 
+    public String getSubject(String tokenJWT){
+        try {
+            var algoritimo = Algorithm.HMAC256(secret);
+            return JWT.require(algoritimo)
+                    .withIssuer("API Voll.med")
+                    .build()
+                    .verify(tokenJWT)
+                    .getSubject();
+        } catch (JWTVerificationException exception){
+            throw new RuntimeException("Token JWT inválido ou expirado!");
+        }
+    }
+
+
     /**
      * Cria um tempo de expiração que é de duas horas, o mesmo é calculado pegando o valor do tempo agora e adicionando dois, depoois convertendo
      * para a nossa região a partir do ZoneOffset
