@@ -34,6 +34,7 @@ public class TokenService {
                     .withClaim("id", usuario.getLogin()) // caso queira guardar mais informacoes pode usar este metodo (pode chamar varias vezes )
                     .withExpiresAt(dataExpiracao())
                     .sign(algoritimo);// reusable verifier instance
+
         } catch (JWTVerificationException exception){
             throw new RuntimeException("erro ao gerar token jwt", exception);
         }
