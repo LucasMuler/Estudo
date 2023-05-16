@@ -8,6 +8,9 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
+/**
+Criando uma entidade JPA do mue usuario, onde o mesmo todo criado a partir das anotações do lombok,
+ */
 @Entity
 @Table(name = "tb_user")
 @NoArgsConstructor
