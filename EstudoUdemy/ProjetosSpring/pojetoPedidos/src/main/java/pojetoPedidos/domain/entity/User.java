@@ -8,12 +8,16 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
+@Entity
+@Table(name = "tb_user")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @EqualsAndHashCode
 public class User implements Serializable {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String nome;
