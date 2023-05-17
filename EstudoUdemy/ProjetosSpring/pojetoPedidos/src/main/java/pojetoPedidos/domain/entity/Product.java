@@ -7,6 +7,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "tb_product")
@@ -24,4 +26,16 @@ public class Product implements Serializable {
     private Double price;
     private String imgUrl;
 
+    @ManyToMany
+    @JoinTable(name = "tb_product-category", joinColumns = @JoinColumn(name = "product_id"),
+    inverseJoinColumns = @JoinColumn(name = "category_id"))
+    private Set<Category> categorys = new HashSet<>();
+
+    public Product(Long id, String name, String description, double price, String imgUrl) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.price = price;
+        this.imgUrl = imgUrl;
+    }
 }
