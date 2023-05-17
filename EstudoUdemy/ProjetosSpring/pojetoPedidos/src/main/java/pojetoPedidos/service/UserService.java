@@ -6,9 +6,10 @@ import pojetoPedidos.domain.entity.User;
 import pojetoPedidos.domain.repository.UserRepository;
 
 import java.util.List;
+import java.util.Optional;
 
 
-@Service //normalmente é utilizado o @Component 
+@Service //normalmente é utilizado o @Component
 public class UserService {
 
     @Autowired
@@ -18,4 +19,7 @@ public class UserService {
         return repository.findAll();
     }
 
+    public Optional<User> findById(Long id) {
+        return repository.findById(id);
+    }
 }
