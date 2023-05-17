@@ -17,6 +17,7 @@ Criando uma entidade JPA do mue usuario, onde o mesmo todo criado a partir das a
 @Entity
 @Table(name = "tb_user")
 @NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @EqualsAndHashCode
 public class User implements Serializable {
