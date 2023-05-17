@@ -1,4 +1,4 @@
-package pojetoPedidos.domain.entity;
+package pojetoPedidos.domain.entity.enums;
 
 public enum OrderStatus {
 

@@ -7,6 +7,7 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.springframework.web.bind.annotation.RequestMapping;
+import pojetoPedidos.domain.entity.enums.OrderStatus;
 
 import java.io.Serializable;
 import java.time.Instant;
@@ -31,5 +32,8 @@ public class Order implements Serializable {
     @ManyToOne
     @JoinColumn(name = "client_id")
     private User client;
+
+    @Enumerated(EnumType.STRING)
+    private OrderStatus orderStatus;
 
 }
