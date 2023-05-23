@@ -7,8 +7,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class CarroServiceTest {
 
     private Carro carroVermelho;
@@ -29,25 +27,36 @@ class CarroServiceTest {
     @Test
     @DisplayName("Deve Retornar se a cor coincide com a de entrada de cor vermelho")
     void verificaCor_returnTrue_IfTheCollorIsEqualsVermelho(){
-        Assertions.assertTrue(carroService.sameColor(carroVermelho,vermelho));
+        Assertions.assertTrue(carroService.verifySameColor(carroVermelho,vermelho));
     }
 
     @Test
     @DisplayName("Deve Retornar se a cor coincide com a de entrada de cor azul")
     void verificaCor_returnTrue_IfTheCollorIsEqualsAzul(){
-        Assertions.assertTrue(carroService.sameColor(carroAzul,azul));
+        Assertions.assertTrue(carroService.verifySameColor(carroAzul,azul));
     }
 
     @Test
     @DisplayName("Deve Retornar falso pois a entrada é carro vermelho e cor azul")
     void verificaCor_returnFalse_IfTheCollorIsEqualAzul(){
-        Assertions.assertFalse(carroService.sameColor(carroVermelho,azul));
+        Assertions.assertFalse(carroService.verifySameColor(carroVermelho,azul));
     }
 
     @Test
     @DisplayName("Deve Retornar falso pois a entrada é carro azul e cor vermelho")
     void verificaCor_returnFalse_IfTheCollorIsEqualVermelho(){
-        Assertions.assertFalse(carroService.sameColor(carroAzul,vermelho));
+        Assertions.assertFalse(carroService.verifySameColor(carroAzul,vermelho));
     }
 
+    @Test
+    @DisplayName("Deve Retornar uma exception pois não tem entrada de carro")
+    void verifyCarroNull_returnException_IfTheCarIsNull(){
+        Assertions.assertThrows(NullPointerException.class, () -> carroService.verifySameColor(null,vermelho));
+    }
+
+    @Test
+    @DisplayName("Deve Retornar uma exception pois não tem entrada de cor")
+    void verifyCorNull_returnException_IfTheColorIsNull(){
+        Assertions.assertThrows(NullPointerException.class, () -> carroService.verifySameColor(carroAzul,null));
+    }
 }
