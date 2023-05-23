@@ -1,7 +1,7 @@
-package aluas.demo.ZZKjunit.test;
+package aluas.demo.ZZKjunit.verificaIdade.test;
 
-import aluas.demo.ZZKjunit.dominio.Person;
-import aluas.demo.ZZKjunit.service.PersonService;
+import aluas.demo.ZZKjunit.verificaIdade.dominio.Person;
+import aluas.demo.ZZKjunit.verificaIdade.service.PersonService;
 import lombok.extern.log4j.Log4j2;
 
 @Log4j2

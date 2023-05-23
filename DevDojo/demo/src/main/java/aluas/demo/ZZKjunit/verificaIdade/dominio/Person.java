@@ -1,4 +1,4 @@
-package aluas.demo.ZZKjunit.dominio;
+package aluas.demo.ZZKjunit.verificaIdade.dominio;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

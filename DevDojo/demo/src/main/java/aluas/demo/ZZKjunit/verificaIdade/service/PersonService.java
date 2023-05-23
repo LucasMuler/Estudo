@@ -1,10 +1,8 @@
-package aluas.demo.ZZKjunit.service;
+package aluas.demo.ZZKjunit.verificaIdade.service;
 
-import aluas.demo.ZZKjunit.dominio.Person;
-import org.springframework.stereotype.Service;
+import aluas.demo.ZZKjunit.verificaIdade.dominio.Person;
 
 import java.util.List;
-import java.util.Objects;
 import java.util.stream.Collectors;
 
 

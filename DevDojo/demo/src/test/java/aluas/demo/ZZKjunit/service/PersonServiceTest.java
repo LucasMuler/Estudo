@@ -1,14 +1,13 @@
 package aluas.demo.ZZKjunit.service;
 
-import aluas.demo.ZZKjunit.dominio.Person;
+import aluas.demo.ZZKjunit.verificaIdade.dominio.Person;
+import aluas.demo.ZZKjunit.verificaIdade.service.PersonService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class PersonServiceTest {
 
